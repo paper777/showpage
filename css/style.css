@@ -1,0 +1,159 @@
+/* ******************************
+	Author: Matthias Mentasti
+	Website: www.mment.at
+	E-Mail: matthias@mment.at
+	Status: feeling awesome
+****************************** */
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: none;
+}
+body {
+   background: #1b1d20;
+   color: #1b1d20;
+   font: 15px/26px 'Mate', Times, "Times New Roman", serif;
+   margin-bottom: 10px;
+}
+a {
+   color: #fff;
+   text-decoration: none;
+}
+a:hover {
+   color: #846a33;
+}
+ul {
+   margin: 0px;
+   list-style-type: none;
+}
+.clear {
+   clear: both;
+}
+::-moz-selection,
+::selection { 
+   background: #444; 
+   color: #fff; 
+   text-shadow: none; 
+}
+
+
+/* **** General **** */
+.layer {
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+}
+
+/* **** Startlayer **** */
+#start {
+   background: #1b1d20 url("../graphic/startbackground.png") center center no-repeat;
+   background: #1b1d20;
+   background: #fff;
+   z-index: 12;
+   text-align: center;
+   padding-top: 100px;
+}
+#start article {
+   position: absolute;
+   top: 50%;
+   width: 100%;
+   margin-top: -100px;
+}
+#start h3 {
+   font-size: 9px;
+   text-transform: uppercase;
+   color: #a88743;
+   color: #767779;
+   letter-spacing: 0.25em;
+   margin-bottom: 80px;
+   font-weight: normal;
+   font-family: proxima-nova-1, proxima-nova-2, sans-serif !important;
+   display: none;
+}
+#start h2 {
+   font-size: 22px;
+   letter-spacing: 0.1em;
+   margin-bottom: 0px;
+   font-weight: normal;
+}
+#start h2 span {
+   color: #a88743;
+   color: #1b1d20;
+   font-style: italic;
+}
+#start h1 {
+   font-size: 14px;
+   font-style: italic;
+   color: #a95430;
+   color: #aa9483;
+   letter-spacing: 0.1em;
+   padding-bottom: 89px;
+   background: url("../graphic/h1background.png") center bottom no-repeat;
+   font-weight: normal;
+}
+#start ul {
+   width: 620px;
+   position: absolute;
+   bottom: 0px;
+   left: 50%;
+   margin-left: -310px;   
+}
+#start li {
+   display: inline-block;
+   list-style: none;
+   margin: 0px;
+}
+#start a {
+   position: relative;
+   display: block;
+   width: 150px;
+   height: 10px;
+   border-bottom: none;
+   font-family: proxima-nova-1, proxima-nova-2, sans-serif !important;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 10px;
+   line-height: 10px;
+   letter-spacing: 0.2em;
+   color: #767779;
+   text-transform: uppercase;
+   padding: 24px 0 10px 0;
+   margin-bottom: 11px;
+}
+#start a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 0;
+  height: 1px;
+  background-color: #aa9483;
+  content: "";
+  transition: width 0.3s;
+}
+#start a:hover {
+   background: #fff;
+   color: #767779;
+}
+#start a:hover:after {
+  width: 100%;
+}
+
+
+/* Startanimation */
+#start h1, #start h2, #start h3 {
+   opacity: 0;
+   position: relative;
+}
+#start h2 {
+   top: -20px;
+}
+#start h3 {
+   top: -20px;
+}
+#start ul {
+   opacity: 0;
+}
